@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+
+</head>
+<body>
+    <div class="head">
+     <h1>To  DO List</h1>   
+     <p><i>Instructions</i></p>
+     <p>Type your task below and press the add button to add</p>
+    </div>
+    <div class="container">
+        <form action="">
+        <input type="text" placeholder="enter your task" id="Text">
+       
+        <button class="button-92" role="button" id="Btn">Button 92</button>
+    </form>
+    <ul id="toDoList">
+
+    </ul>
+    </div>
+ <script src="javaS.js"></script>
+ <style>
+body{
+    background-color: rgba(10, 10, 148, 0.685);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head{
+    background-color: blueviolet;
+    width: 50%;
+    padding-left: 20%;
+    border-style: solid;
+    border-color: #004dff;
+    border-radius: 50px 10px;
+   
+}
+.container{
+    background-color: rgba(133, 6, 165, 0.753);
+    width: 400px;
+    height: 500px;
+    padding-left: 10%;
+}
+
+
+
+
+/* CSS */
+.button-92 {
+  --c: #fff;
+  /* text color */
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    #004dff;
+  /* background color */
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+
+.button-92:hover,
+.button-92:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.button-92:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+.button-92 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .3em;
+}
+h1, p{
+    color: rgb(18, 5, 139);
+}
+ </style>
+
+</body>
+</html>
